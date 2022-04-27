@@ -1,0 +1,83 @@
+body{
+    background-image: url('../MEDIA/BACKGROUND/lovestray_background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div.nav {
+    margin: 0%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 75px;
+}
+
+img.icon {
+    float: right;
+    margin-right: 2%;
+    padding: 0%;
+}
+
+img.header {
+    top: 20px;
+    float: left;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+a:hover {
+    color: aqua;
+}
+
+.doggallery, .catgallery{
+    float: left;
+    width: 230px;
+    height: 230px;
+    display: block;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+div::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.introduction{
+    color:whitesmoke;
+    float: right;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: auto;
+}
+
+h1{
+    font-family: Helvetica;
+    text-align: center;
+    color:whitesmoke;
+}
+
+#dog1, #dog2, #dog3, #dog4{
+    margin-left: 275px;
+}
+
+#cat1, #cat2, #cat3, #cat4{
+    margin-left: 275px;    
+}
