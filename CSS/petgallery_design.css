@@ -43,6 +43,13 @@ a:hover {
     color: aqua;
 }
 
+img.landingpage_img{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 20px 30px;
+}
+
 .doggallery, .catgallery{
     float: left;
     width: 230px;
@@ -72,6 +79,13 @@ h1{
     font-family: Helvetica;
     text-align: center;
     color:whitesmoke;
+}
+
+p{
+    text-align: justify;
+    color:whitesmoke;
+    font-size: 1.25em;
+    margin: 10px 10px;
 }
 
 #dog1, #dog2, #dog3, #dog4{
