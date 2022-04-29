@@ -146,6 +146,12 @@ input::-webkit-inner-spin-button {
     height: 25px;
 }
 
+textarea{
+    width: 560px;
+    height: 250px;
+    resize: none;
+}
+
 #friessize{
     background-color: red;
     color: yellow;
