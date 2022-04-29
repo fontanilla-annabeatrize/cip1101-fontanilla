@@ -100,6 +100,15 @@
                     <input type="radio" name="patties" id="doublepatty" value="doublepatty">
                     <label for="doublepatty">Double patty</label>
                 </div>
+                <p>Type of Bun</p>
+                <div class="menuproper">
+                    <input type="radio" name="bun" id="regular" value="regular">
+                    <label for="bun">Regular</label>
+                    <input type="radio" name="bun" id="wheat" value="wheat">
+                    <label for="wheat">Wheat</label>
+                    <input type="radio" name="bun" id="honeyoat" value="honeyoat">
+                    <label for="honeyoat">Honey oat</label>
+                </div>
                 <p>Fillings</p>
                 <div class="menuproper">
                     <input type="checkbox" name="cheese" id="cheese">
@@ -202,9 +211,17 @@
                     <input type="radio" name="drinks" id="icedtea" value="icedtea">
                     <label for="icedtea">Iced Tea</label>
                 </div>
+                <p>Pick a size</p>
+                <div class="menuproper">
+                    <select name="drinkssize" id="drinkssize">
+                        <option value="Small">12 oz.</option>
+                        <option value="Medium">16 oz.</option>
+                        <option value="Large">24 oz.</option>
+                    </select>
+                </div>
                 <div class="menuproper">
                     <label for="drinksquantity">Quantity</label>
-                    <input type="number" name="friesquantity" id="friesquantity" min="0" max="20">
+                    <input type="number" name="drinksquantity" id="drinksquantity" min="0" max="20">
                 </div>
                 <div>
                     <button type="button">Add to cart</button>
