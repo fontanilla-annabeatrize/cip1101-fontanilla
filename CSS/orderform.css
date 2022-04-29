@@ -152,7 +152,7 @@ textarea{
     resize: none;
 }
 
-#friessize{
+#friessize, #delivery{
     background-color: red;
     color: yellow;
     font-size: 1.25em;
@@ -177,7 +177,3 @@ button{
     margin: 30px 30px;
 
 }
-
-
-
-
