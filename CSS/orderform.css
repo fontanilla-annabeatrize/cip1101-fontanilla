@@ -152,7 +152,7 @@ textarea{
     resize: none;
 }
 
-#friessize, #delivery{
+#friessize, #drinkssize, #delivery{
     background-color: red;
     color: yellow;
     font-size: 1.25em;
