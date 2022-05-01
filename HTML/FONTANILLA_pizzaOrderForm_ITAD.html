@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="ANNA BEATRIZE FONTANILLA">
+        <title>Registration Form</title>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Bubbles&family=Spline+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="icon" href="../ORDERFORM_MEDIA/bbokari.png" type="image/x-icon">
+        <link rel="stylesheet" href="../CSS/orderform.css">
+    </head>
+    <body>
+        <header>
+            <img src="../MEDIA/bbokari.png" id="felix" alt="Felix">
+            <h1>Felix's Eatery: Order Form</h1>
+        </header>
+        <form action=" " method="GET" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Customer Information</legend>
+                <div>
+                    <label for="firstname">First Name</label>
+                    <input type="text" placeholder="First name" name="firstname" id="firstname" required>
+                    <label for="middleinitial">Middle Initial</label>
+                    <input type="text" placeholder="M" name="middleinitial" id="middleinitial">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" placeholder="Last name" name="lastname" id="lastname" required>
+                </div>
+                <p>Delivery Address</p>
+                <div>
+                    <label for="houseNo">House or Apartment Number</label>
+                    <input type="number" placeholder="0 if none" name="houseNo" id="houseNo" min="0" required>
+                    <label for="streetNo">Street Name</label>
+                    <input type="text" placeholder="Enter street name or type N/A" name="streetNo" id="streetName" required>
+                    <label for="streetNo">Street Number</label>
+                    <input type="number" placeholder="0 if none" name="streetNo" id="streetNo" required>
+                </div>
+                <div>
+                    <label for="brngyName">Barangay/Subdivision Name</label>
+                    <input type="text" name="brngyName" id="brngyName" placeholder="Enter barangay name" required>
+                    <label for="city">City</label>
+                    <select name="city" id="city" required>
+                        <option value="Olongapo">Olongapo</option>
+                        <option value="Dinalupihan">Dinalupihan</option>
+                        <option value="Subic">Subic</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="province">Province</label>
+                    <select name="province" id="zipcode" required>
+                        <option value="Zambales">Zambales</option>
+                        <option value="Bataan">Bataan</option>
+                    </select>
+                    <label for="zipcode">ZIP Code</label>
+                    <select name="zipcode" id="zipcode" required>
+                        <option value="2200">2200</option>
+                        <option value="2110">2110</option>
+                    </select>
+                    <label for="phonenumber">Mobile Number</label>
+                    <input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" placeholder="0123-456-7890" required>
+                </div>
+                <div>
+                    <label for="directions">Description of landmarks</label>
+                    <br>
+                    <textarea id="directions" name="directions"></textarea>
+                </div> 
+            </fieldset>
+            <fieldset id="menu_selection">
+                <legend>Pick an item</legend>
+                <div class="menu">
+                    <label>
+                        <input type="radio" name="menu_pick" value="menu_burger" id="menu_burger">
+                        <a href="#burger"><img class="menu_pic" src="../MEDIA/burger.png">Burger</a>
+                    </label>
+                </div>
+                <div class="menu">
+                    <label>
+                        <input type="radio" name="menu_pick" value="menu_pasta" id="menu_pasta">
+                        <a href="#pasta"><img class="menu_pic" src="../MEDIA/pasta.png">Pasta</a>
+                    </label>
+                </div>
+                <div class="menu">
+                    <label>
+                        <input type="radio" name="menu_pick" value="menu_fries" id="menu_fries">
+                        <a href="#fries"><img class="menu_pic" src="../MEDIA/fries.png">Fries</a>
+                    </label>
+                </div>
+                <div class="menu">
+                    <label>
+                        <input type="radio" name="menu_pick" value="menu_drinks" id="menu_drinks">
+                        <a href="#drinks"><img class="menu_pic" src="../MEDIA/drinks.png">Drinks</a>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset id="burger">
+                <legend>Burgers</legend>
+                <img src="../MEDIA/burger2.png" alt="burger" id="burger_pic">
+                <p>Number of Patties</p>
+                <div class="menuproper">
+                    <input type="radio" name="patties" id="singlepatty" value="singlepatty">
+                    <label for="singlepatty">Single patty</label>
+                    <input type="radio" name="patties" id="doublepatty" value="doublepatty">
+                    <label for="doublepatty">Double patty</label>
+                </div>
+                <p>Type of Bun</p>
+                <div class="menuproper">
+                    <input type="radio" name="bun" id="regular" value="regular">
+                    <label for="bun">Regular</label>
+                    <input type="radio" name="bun" id="wheat" value="wheat">
+                    <label for="wheat">Wheat</label>
+                    <input type="radio" name="bun" id="honeyoat" value="honeyoat">
+                    <label for="honeyoat">Honey oat</label>
+                </div>
+                <p>Fillings</p>
+                <div class="menuproper">
+                    <input type="checkbox" name="cheese" id="cheese">
+                    <label for="cheese">Cheese</label>
+                    <input type="checkbox" name="lettuce" id="lettuce">
+                    <label for="lettuce">Lettuce</label>
+                    <input type="checkbox" name="tomatoes" id="tomatoes">
+                    <label for="tomatoes">Tomatoes</label>
+                    <input type="checkbox" name="bacon" id="bacon">
+                    <label for="bacon">Bacon</label>
+                    <input type="checkbox" name="Coleslaw" id="coleslaw">
+                    <label for="coleslaw">Coleslaw</label>
+                </div>
+                <div class="menuproper">
+                    <label for="burgerquantity">Quantity</label>
+                    <input type="number" name="burgerquantity" id="burgerquantity" min="0" max="20">
+                </div>
+                <div>
+                    <button type="button">Add to cart</button>
+                    <button type="submit">Checkout</button>
+                </div>
+            </fieldset>
+            <fieldset id="pasta">
+                <legend>Pasta</legend>
+                <img src="../MEDIA/pasta2.png" alt="pasta" id="pasta_pic">
+                <div class="menuproper">
+                    <input type="radio" name="spaghetti" id="spaghetti" value="spaghetti">
+                    <label for="spaghetti">Spaghetti</label>
+                    <input type="radio" name="Carbonara" id="carbonara" value="carbonara">
+                    <label for="carbonara">Carbonara</label>
+                    <input type="radio" name="pesto" id="pesto" value="pesto">
+                    <label for="pesto">Pesto</label>
+                    <input type="radio" name="bolognese" id="bolognese" value="bolognese">
+                    <label for="bolognese">Bolognese</label>
+                    <input type="radio" name="alfredo" id="alfredo" value="alfredo">
+                    <label for="alfredo">Alfredo</label>
+                </div>
+                <p>Extras</p>
+                <div class="menuproper">
+                    <input type="checkbox" name="extracheese" id="extracheese">
+                    <label for="extracheese">Extra cheese</label>
+                    <input type="checkbox" name="sauce" id="sauce">
+                    <label for="sauce">Extra sauce</label>
+                    <input type="checkbox" name="noodles" id="noodles">
+                    <label for="noodles">Extra noodles</label>
+                </div>
+                <div class="menuproper">
+                    <label for="pastaquantity">Quantity</label>
+                    <input type="number" name="pastaquantity" id="pastaquantity" min="0" max="20">
+                </div>
+                <div>
+                    <button type="button">Add to cart</button>
+                    <button type="submit">Checkout</button>
+                </div>
+            </fieldset>
+            <fieldset id="fries">
+                <legend>Fries</legend>
+                <img src="../MEDIA/fries2.png" alt="fries" id="fries_pic">
+                <p>Pick a size</p>
+                <div class="menuproper">
+                    <select name="friessize" id="friessize">
+                        <option value="Small">Small</option>
+                        <option value="Medium">Medium</option>
+                        <option value="Large">Large</option>
+                    </select>
+                </div>
+                <p>Available flavors</p>
+                <div class="menuproper">
+                    <input type="radio" name="friesflavor" id="cheesefries" value="cheesefries">
+                    <label for="cheesefries">Cheese</label>
+                    <input type="radio" name="friesflavor" id="bbqfries" value="bbqfries">
+                    <label for="bbqfries">BBQ</label>
+                    <input type="radio" name="friesflavor" id="sourcreamfries" value="sourcreamfries">
+                    <label for="sourcreamfries">Sour Creams</label>         
+                </div>
+                <div class="menuproper">
+                    <label for="friesquantity">Quantity</label>
+                    <input type="number" name="friesquantity" id="friesquantity" min="0" max="20">
+                </div>
+                <div>
+                    <button type="button">Add to cart</button>
+                    <button type="submit">Checkout</button>
+                </div>
+            </fieldset>
+            <fieldset id="drinks">
+                <legend>Drinks</legend>
+                <img src="../MEDIA/drinks2.png" alt="drinks" id="drinks_pic">
+                <p>Available flavors</p>
+                <div class="menuproper">
+                    <input type="radio" name="drinks" id="cocacola" value="cocacola">
+                    <label for="cocacola">Coca-cola</label>
+                    <input type="radio" name="drinks" id="royal" value="royal">
+                    <label for="royal">Royal</label>
+                    <input type="radio" name="drinks" id="sprite" value="sprite">
+                    <label for="sprite">Sprite</label>
+                    <input type="radio" name="drinks" id="orangejuice" value="orangejuice">
+                    <label for="orangejuice">Orange Juice</label>
+                    <input type="radio" name="drinks" id="pineapplejuice" value="pineapplejuice">
+                    <label for="pineapplejuice">Pineapple Juice</label>
+                    <input type="radio" name="drinks" id="icedtea" value="icedtea">
+                    <label for="icedtea">Iced Tea</label>
+                </div>
+                <p>Pick a size</p>
+                <div class="menuproper">
+                    <select name="drinkssize" id="drinkssize">
+                        <option value="Small">12 oz.</option>
+                        <option value="Medium">16 oz.</option>
+                        <option value="Large">24 oz.</option>
+                    </select>
+                </div>
+                <div class="menuproper">
+                    <label for="drinksquantity">Quantity</label>
+                    <input type="number" name="drinksquantity" id="drinksquantity" min="0" max="20">
+                </div>
+                <div>
+                    <button type="button">Add to cart</button>
+                    <button type="submit">Checkout</button>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Mode of Delivery</legend>
+                <div>
+                    <select name="delivery" id="delivery">
+                        <option value="Delivery">Delivery</option>
+                        <option value="Pick-up">Pick-up</option>
+                    </select>
+                    <div>
+                        <label for="directions">Suggestions/comments on order form</label>
+                        <br>
+                        <textarea id="directions" name="directions"></textarea>
+                    </div> 
+                </div>
+            </fieldset>
+            <div class="submitform">
+                <button type="submit">Checkout order</button>
+            </div>
+        </form>
+    </body>
+</html>
