@@ -49,3 +49,17 @@ img.landingpage_img{
     float: left;
     margin: 20px 30px;
 }
+
+img#cardo{
+    float: left;
+    width: 320px;
+    height: 270px;
+}
+
+p{
+    color: white;
+    text-align: justify;
+    font-size: 1.25em;
+    float: right;
+    overflow: auto;
+}
