@@ -43,23 +43,18 @@ a:hover {
     color: aqua;
 }
 
-img.landingpage_img{
-    width: 300px;
-    height: 300px;
+.sstories{
+    overflow: auto;
+}
+
+img.successtories_img {
+    width: 375px;
+    height: 325px;
     float: left;
     margin: 20px 30px;
 }
 
-img#cardo{
-    float: left;
-    width: 320px;
-    height: 270px;
-}
-
 p{
     color: white;
-    text-align: justify;
     font-size: 1.25em;
-    float: right;
-    overflow: auto;
 }
