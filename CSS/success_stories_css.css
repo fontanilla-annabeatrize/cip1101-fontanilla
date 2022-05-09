@@ -1,0 +1,51 @@
+body{
+    background-image: url('../MEDIA/BACKGROUND/lovestray_background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+div.nav {
+    margin: 0%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 75px;
+}
+
+img.icon {
+    float: right;
+    margin-right: 2%;
+    padding: 0%;
+}
+
+img.header {
+    top: 20px;
+    float: left;
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: Helvetica;
+}
+a:hover {
+    color: aqua;
+}
+
+img.landingpage_img{
+    width: 300px;
+    height: 300px;
+    float: left;
+    margin: 20px 30px;
+}
