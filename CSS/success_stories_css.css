@@ -43,15 +43,23 @@ a:hover {
     color: aqua;
 }
 
+/****content****/
+
+h1, h2{
+    text-align: center;
+    color: white;
+
+}
 .sstories{
+    margin: 20px 10px;
     overflow: auto;
 }
 
 img.successtories_img {
-    width: 375px;
-    height: 325px;
+    width: 300px;
+    height: 300px;
     float: left;
-    margin: 20px 30px;
+    margin: 20px 20px;
 }
 
 p{
