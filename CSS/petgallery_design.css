@@ -17,6 +17,11 @@ div.nav {
     width: 100px;
     height: 75px;
 }
+div.nav {
+    margin: .75%;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.441);
+}
 
 img.icon {
     float: right;
