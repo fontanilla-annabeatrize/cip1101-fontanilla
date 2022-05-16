@@ -1,9 +1,9 @@
 body{
-    background-image: url('../IMAGES/BACKGROUND/lovestray_background.png');
+    background-image: url('../IMAGES/lovestray_background.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin: 0px;
+    margin: 0%;
 }
 
 div.nav {
@@ -17,16 +17,12 @@ div.nav {
     width: 100px;
     height: 75px;
 }
-div.nav {
-    margin: .75%;
-    padding: 2%;
-    background-color: rgba(0, 0, 0, 0.441);
-}
 
 img.icon {
     float: right;
     margin-right: 2%;
     padding: 0%;
+    
 }
 
 img.header {
@@ -45,6 +41,7 @@ a{
     font-size: 18px;
     font-family: Helvetica;
 }
+
 a:hover {
     color: aqua;
 }
@@ -110,21 +107,24 @@ footer {
     padding: 3px;
     background-color: DarkSalmon;
     color: white;
-  }
-  footer {
+}
+  
+footer {
     background-color: #838b64;
     margin: 10px 0 0 0;
-
 }
+
 footer h2 {
     font-size: 1.5em;
     font-weight: bold;
 }
+
 footer > div,
 footer > .divider {
     display: inline-block;
     vertical-align: middle;   
 }
+
 footer > div {
     padding: 1%;
     text-align: center;
@@ -138,6 +138,7 @@ footer > .divider {
     -webkit-box-shadow: 1px 2px 1px #ccc;
     box-shadow: 1px 2px 1px #ccc;
 }
+
 img{
     width: 50px; 
     height:50px;

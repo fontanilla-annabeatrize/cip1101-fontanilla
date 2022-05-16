@@ -1,9 +1,9 @@
 body{
-    background-image: url('../IMAGES/BACKGROUND/lovestray_background.png');
+    background-image: url('../IMAGES/lovestray_background.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    margin: 0px;
+    margin: 0%;
 }
 
 div.nav {
@@ -22,6 +22,7 @@ img.icon {
     float: right;
     margin-right: 2%;
     padding: 0%;
+    
 }
 
 img.header {
@@ -40,6 +41,7 @@ a{
     font-size: 18px;
     font-family: Helvetica;
 }
+
 a:hover {
     color: aqua;
 }
