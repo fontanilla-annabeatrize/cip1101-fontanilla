@@ -53,6 +53,11 @@ img.landingpage_img{
     margin: 20px 30px;
 }
 
+img:hover.doggallery, img:hover.catgallery{
+    opacity: 1;
+    box-shadow: 0 0 10px 10px yellow;
+}
+
 .doggallery, .catgallery{
     float: left;
     width: 230px;
