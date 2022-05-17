@@ -41,6 +41,10 @@ a{
     font-family: Helvetica;
 }
 
+.links{
+    text-align: center;
+}
+
 a:hover {
     color: aqua;
 

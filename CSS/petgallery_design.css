@@ -51,6 +51,7 @@ img.landingpage_img{
     height: 300px;
     float: left;
     margin: 20px 30px;
+    border-radius: 15px;
 }
 
 img:hover.doggallery, img:hover.catgallery{
