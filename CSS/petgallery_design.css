@@ -55,7 +55,6 @@ img.landingpage_img{
 
 img:hover.doggallery, img:hover.catgallery{
     opacity: 1;
-    box-shadow: 0 0 10px 10px yellow;
 }
 
 .doggallery, .catgallery{
