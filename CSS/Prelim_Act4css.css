@@ -1,0 +1,78 @@
+/*-------------------images------------------------*/
+
+#logo {
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+}
+
+.posters {
+    width: 255px;
+    height: 320px;
+}
+
+/*-------------------links---------------------------*/
+
+a:link {
+    color: #fefffb; 
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #fc606c;
+    color: #fefffb; 
+}
+
+/*------------------content--------------------------*/
+
+body
+{
+    background-color: #663b86;
+}
+
+header {
+    margin: 25px 55px;
+}
+
+.container {
+    padding-left: 245px;
+    padding-right: 100px;
+}
+
+thead > tr > td {
+    text-align: center;
+}
+
+/*--------------------text-----------------------*/
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: #F6D0C8;
+    display: inline-block;
+    text-shadow: 4px 4px #fc606c;
+}
+
+h2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #F6D0C8;
+    text-shadow: 4px 4px #fc606c;
+    display: inline-block;
+
+}
+
+p {
+    color: white;
+    font-size: 1.25em;
+}
+
+table {
+    border: 5px dashed #da4188;
+}
+
+td {
+    padding: 10px 10px;
+    font-size: 1.25em;
+    color: white;
+    text-align: justify;
+
+}
