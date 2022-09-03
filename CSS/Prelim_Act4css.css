@@ -14,14 +14,22 @@
 /*-------------------links---------------------------*/
 
 a:link {
+    background-color: #fc606c;
     color: #fefffb; 
     text-decoration: none;
+    border-radius: 35px;
 }
 
 a:hover {
     background-color: #fc606c;
-    color: #fefffb; 
+    color: #da4188;
 }
+
+.links {
+    padding: 5px 15px;
+}
+
+
 
 /*------------------content--------------------------*/
 
