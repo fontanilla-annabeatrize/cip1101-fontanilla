@@ -4,79 +4,9 @@
         <meta charset="utf-8">
         <meta name="author" content="ANNA BEATRIZE FONTANILLA">
         <title>Student Information Sheet</title>
+        <link rel="stylesheet" href="../CSS/Prelim_Actcss.css">
     </head>
-    <style>
-        .studentinfopage{
-            background-color: #ffe0cc;
-            font-family: Arial, Helvetica, sans-serif;
-            color: #ff3333;
-        }
-
-        fieldset {
-            width: 925px;
-            margin: 0 auto;
-            text-align: center;
-            border: 3px solid #ff6600;
-        }
-
-        legend {
-            text-align: center;
-            font-size: 1.25em;
-        }
-
-        input {
-            outline: 0;
-            border-width: 0px 0px 2px;
-            border-color: #ff3333; 
-        }
-
-        label {
-            font-size: 1.15em;
-        }
-
-        input {
-            margin: 10px 10px;
-            height: 20px;
-        }
-
-        #studname, #fathername, #mothername, #guardian, #relative {
-            width: 325px;
-        }
-
-        #age {
-            width: 30px;
-        }
-
-        #fatherworkplace, #motherworkplace {
-            width: 250px;
-        }
-
-        #address {
-            width: 575px;
-        }
-
-        #email {
-            width: 225px;
-        }
-
-        input::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-
-        #medical, #challenges {
-            width: 825px;
-            height: 75px;
-        }
-
-        button[type="submit"] {
-            width: 75px;
-            height: 35px;
-            font-size: 1.15em;
-        }
-    </style>
-    <body>
+    <body class="studentinfopage">
         <form action=" " method="GET" enctype="multipart/form-data">
             <fieldset>
                 <legend><b>Student Information Sheet</b></legend>
@@ -96,7 +26,7 @@
                 </div>
                 <div>
                     <label for="guardian"><b>Guardian's Name(s):</b></label>
-                    <input type="text" placeholder="Full Name" name="guardian" id="guardian" required>
+                    <input type="text" placeholder="ex. Full Name" name="guardian" id="guardian" required>
                     <label for="religion"><b>Religion:</b></label>
                     <input type="text" placeholder="Religion" name="religion" id="religion" required>
                 </div>

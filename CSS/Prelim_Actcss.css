@@ -1,0 +1,165 @@
+/*--------------------------------------------Top 10 Movies-----------------------------------------*/
+
+/*-------------------images------------------------*/
+
+#logo {
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+}
+
+.posters {
+    width: 255px;
+    height: 320px;
+}
+
+/*-------------------links---------------------------*/
+
+.links:link {
+    background-color: #fc606c;
+    color: #fefffb; 
+    text-decoration: none;
+    border-radius: 35px;
+}
+
+.links:hover {
+    background-color: #fc606c;
+    color: #da4188;
+}
+
+.links {
+    padding: 5px 15px;
+}
+
+
+
+/*------------------content--------------------------*/
+
+.moviesfile
+{
+    background-color: #663b86;
+}
+
+header {
+    margin: 25px 55px;
+}
+
+.container {
+    padding-left: 245px;
+    padding-right: 100px;
+}
+
+thead > tr > td {
+    text-align: center;
+}
+
+/*--------------------text-----------------------*/
+
+#moviepagetitle {
+    font-family: 'Press Start 2P', cursive;
+    color: #F6D0C8;
+    display: inline-block;
+    text-shadow: 4px 4px #fc606c;
+}
+
+.moviesh2 {
+    font-family: 'Press Start 2P', cursive;
+    color: #F6D0C8;
+    text-shadow: 4px 4px #fc606c;
+    display: inline-block;
+
+}
+
+#desc {
+    color: white;
+    font-size: 1.25em;
+}
+
+table {
+    border: 5px dashed #da4188;
+}
+
+td {
+    padding: 10px 10px;
+    font-size: 1.25em;
+    color: white;
+    text-align: justify;
+
+}
+
+/*--------------------------------------------Studen Info-------------------------------------------------------*/
+
+/*------------------content--------------------------*/
+
+.studentinfopage {
+    background-color: #ffe0cc;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ff3333;
+}
+
+fieldset {
+    width: 925px;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px solid #ff6600;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.25em;
+}
+
+input {
+    outline: 0;
+    border-width: 0px 0px 2px;
+    border-color: #ff3333; 
+}
+
+input {
+    outline: 0;
+    border-width: 0px 0px 2px;
+    border-color: #ff3333;
+    margin: 10px 10px;
+    height: 20px; 
+}
+
+label {
+    font-size: 1.15em;
+}
+
+#studname, #fathername, #mothername, #guardian, #relative {
+    width: 325px;
+}
+
+#age {
+    width: 30px;
+}
+
+#fatherworkplace, #motherworkplace {
+    width: 250px;
+}
+
+#address {
+    width: 575px;
+}
+
+#email {
+    width: 225px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#medical, #challenges {
+    width: 825px;
+    height: 75px;
+}
+
+button[type="submit"] {
+    width: 75px;
+    height: 35px;
+    font-size: 1.15em;
+}
