@@ -5,7 +5,165 @@
         <meta name="author" content="ANNA BEATRIZE FONTANILLA">
         <title>Student Information Sheet</title>
     </head>
-    <body>
+    <style>
+        body{
+            background-color: #ffe0cc;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ff3333;
+        }
 
+        fieldset {
+            width: 925px;
+            margin: 0 auto;
+            text-align: center;
+            border: 3px solid #ff6600;
+        }
+
+        legend {
+            text-align: center;
+            font-size: 1.25em;
+        }
+
+        input {
+            outline: 0;
+            border-width: 0px 0px 2px;
+            border-color: #ff3333; 
+        }
+
+        label {
+            font-size: 1.15em;
+        }
+
+        input {
+            margin: 10px 10px;
+            height: 20px;
+        }
+
+        #studname, #fathername, #mothername, #guardian, #relative {
+            width: 325px;
+        }
+
+        #age {
+            width: 30px;
+        }
+
+        #fatherworkplace, #motherworkplace {
+            width: 250px;
+        }
+
+        #address {
+            width: 575px;
+        }
+
+        #email {
+            width: 225px;
+        }
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        #medical, #challenges {
+            width: 825px;
+            height: 75px;
+        }
+
+        button[type="submit"] {
+            width: 75px;
+            height: 35px;
+            font-size: 1.15em;
+        }
+    </style>
+    <body>
+        <form action=" " method="GET" enctype="multipart/form-data">
+            <fieldset>
+                <legend><b>Student Information Sheet</b></legend>
+                <div>
+                    <label for="studname"><b>Student's Name:</b></label>
+                    <input type="text" placeholder="Full Name" name="studname" id="studname" required>
+                    <label for="age"><b>Age:</b></label>
+                    <input type="number" placeholder="Age" name="age" id="age" min="4" required>
+                    <label for="sex"><b>Sex:</b></label>
+                    <input type="text" placeholder="Male/Female/Other" name="sex" id="sex" required>
+                </div>
+                <div>
+                    <label for="birthday"><b>Birthdate:</b></label>
+                    <input type="date" name="birthday" id="birthday" required>
+                    <label for="address"><b>Address:</b></label>
+                    <input type="text" placeholder="House No., Street, Barangay, City, Province, Zip Code" name="address" id="address" required>
+                </div>
+                <div>
+                    <label for="guardian"><b>Guardian's Name(s):</b></label>
+                    <input type="text" placeholder="Full Name" name="guardian" id="guardian" required>
+                    <label for="religion"><b>Religion:</b></label>
+                    <input type="text" placeholder="Religion" name="religion" id="religion" required>
+                </div>
+                <div>
+                    <label for="relationship"><b>Relationship to student:</b></label>
+                    <input type="text" name="relationship" id="relationship" required>
+                    <label for="telephone"><b>Telephone:</b></label>
+                    <input type="tel" name="telephone" id="telephone" pattern="[1-9]{3}-[0-9]{3}" placeholder="123-456" required>
+                </div>
+                <div>
+                    <label for="email"><b>Family e-mail:</b></label>
+                    <input type="email" name="email" id="email" placeholder="example@yahoo.com" required>
+                    <label for="contact"><b>Best way to contact you:</b></label>
+                    <input type="text" placeholder="Email, Call, Text, Other" name="contact" id="contact" required>
+                </div>
+                <div>
+                    <label for="fathername"><b>Father's Name:</b></label>
+                    <input type="text" placeholder="Full Name" name="fathername" id="fathername" required>
+                    <label for="fatherworkplace"><b>Workplace:</b></label>
+                    <input type="text" name="fatherworkplace" id="fatherworkplace" required>
+                </div>
+                <div>
+                    <label for="mothername"><b>Mother's Name:</b></label>
+                    <input type="text" placeholder="Full Name" name="mothername" id="mothername" required>
+                    <label for="motherworkplace"><b>Workplace:</b></label>
+                    <input type="text" name="motherworkplace" id="motherworkplace" required>
+                </div>
+                <div>
+                    <label for="medical"><b>Medical Issues/Allergies/Medication:</b></label>
+                    <input type="text" name="medical" id="medical" required>
+                </div>
+                <div>
+                    <label for="challenges"><b>Academic Challenges:</b></label>
+                    <input type="text" name="challenges" id="challenges" required>
+                </div>
+                <div>
+                    <label for="device"><b>Does your child have a device?</b></label>
+                    <input type="radio" name="device" id="device" value="Yes" required>
+                    <label for="device">Yes</label>
+                    <input type="radio" name="device" id="device" value="No" required>
+                    <label for="device">No</label>
+                </div>
+                <div>
+                    <label for="devicetype"><b>What kind of device is your child using?</b></label>
+                    <input type="checkbox" id="laptop" name="laptop" value="laptop">
+                    <label for="laptop">Laptop</label>
+                    <input type="checkbox" id="desktop" name="desktop" value="desktop">
+                    <label for="desktop">Desktop Computer</label>
+                    <input type="checkbox" id="tablet" name="tablet" value="tablet">
+                    <label for="tablet">Tablet</label>
+                    <input type="checkbox" id="smartphone" name="smartphone" value="smartphone">
+                    <label for="smartphone">Smartphone</label>
+                </div>
+                <div>
+                    <label for="internet"><b>Do you have any issues with the internet?</b></label>
+                    <input type="radio" name="device" id="device" value="Yes" required>
+                    <label for="internet">Yes</label>
+                    <input type="radio" name="device" id="device" value="No" required>
+                    <label for="internet">No</label>
+                </div>
+                <div>
+                    <label for="relative"><b>Name of any relatives attending the school and their grade:</b></label>
+                    <input type="text" placeholder="Full Name" name="relative" id="relative" required>
+                </div>
+                <button type="submit">Submit</button>
+            </fieldset>
+        
+        </form>
     </body>
 </html>
