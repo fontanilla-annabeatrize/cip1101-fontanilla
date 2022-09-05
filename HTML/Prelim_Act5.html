@@ -5,16 +5,21 @@
         <meta name="author" content="ANNA BEATRIZE FONTANILLA">
         <title>Student Information Sheet</title>
         <link rel="stylesheet" href="../CSS/Prelim_Actcss.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     </head>
     <body class="studentinfopage">
         <form action=" " method="GET" enctype="multipart/form-data">
+            <div class="formheader">
+                <img src="../IMAGES/ELEM_LOGO.png" alt="Logo" id="felixlogo">
+                <h2 class="school">Felix's Elementary School<br><span id="schooladdress">325 Lovestay St., Bay 8, City 325</span><br><span id="schoolyr">S.Y. 2022-2023</span><br><span id="title">Student Information Sheet</span></h2>
+            </div>
             <fieldset>
                 <legend><b>Student Information Sheet</b></legend>
                 <div>
                     <label for="studname"><b>Student's Name:</b></label>
-                    <input type="text" placeholder="Full Name" name="studname" id="studname" required>
+                    <input type="text" placeholder="ex. Jhemerlyn A. Magdangal" name="studname" id="studname" required>
                     <label for="age"><b>Age:</b></label>
-                    <input type="number" placeholder="Age" name="age" id="age" min="4" required>
+                    <input type="number" placeholder="ex. 6" name="age" id="age" min="4" required>
                     <label for="sex"><b>Sex:</b></label>
                     <input type="text" placeholder="Male/Female/Other" name="sex" id="sex" required>
                 </div>
@@ -26,15 +31,15 @@
                 </div>
                 <div>
                     <label for="guardian"><b>Guardian's Name(s):</b></label>
-                    <input type="text" placeholder="ex. Full Name" name="guardian" id="guardian" required>
+                    <input type="text" placeholder="ex. Jolina B. Magdangal" name="guardian" id="guardian" required>
                     <label for="religion"><b>Religion:</b></label>
-                    <input type="text" placeholder="Religion" name="religion" id="religion" required>
+                    <input type="text" placeholder="ex. Catholic" name="religion" id="religion" required>
                 </div>
                 <div>
                     <label for="relationship"><b>Relationship to student:</b></label>
-                    <input type="text" name="relationship" id="relationship" required>
+                    <input type="text" placeholder="ex. Mother, Sister, etc." name="relationship" id="relationship" required>
                     <label for="telephone"><b>Telephone:</b></label>
-                    <input type="tel" name="telephone" id="telephone" pattern="[1-9]{3}-[0-9]{3}" placeholder="123-456" required>
+                    <input type="tel" name="telephone" id="telephone" pattern="[1-9]{3}-[0-9]{3}" placeholder="ex. 123-456" required>
                 </div>
                 <div>
                     <label for="email"><b>Family e-mail:</b></label>
@@ -56,11 +61,11 @@
                 </div>
                 <div>
                     <label for="medical"><b>Medical Issues/Allergies/Medication:</b></label>
-                    <input type="text" name="medical" id="medical" required>
+                    <textarea id="medical" name="medical" placeholder="ex. Asthma, Shellfish allergy. etc."rows="4" required></textarea>
                 </div>
                 <div>
                     <label for="challenges"><b>Academic Challenges:</b></label>
-                    <input type="text" name="challenges" id="challenges" required>
+                    <textarea id="challenges" name="challenges" placeholder="ex. Has difficulty in Math, English, etc."rows="4" required></textarea>
                 </div>
                 <div>
                     <label for="device"><b>Does your child have a device?</b></label>
@@ -89,7 +94,7 @@
                 </div>
                 <div>
                     <label for="relative"><b>Name of any relatives attending the school and their grade:</b></label>
-                    <input type="text" placeholder="Full Name" name="relative" id="relative" required>
+                    <input type="text" placeholder="ex. Joan Magdangal, Grade 6" name="relative" id="relative" required>
                 </div>
                 <button type="submit">Submit</button>
             </fieldset>

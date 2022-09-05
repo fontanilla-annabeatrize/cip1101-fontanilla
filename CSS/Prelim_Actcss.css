@@ -1,10 +1,10 @@
 /*--------------------------------------------Top 10 Movies-----------------------------------------*/
 
-/*-------------------images------------------------*/
+/*--------------------------images------------------------*/
 
 #logo {
-    width: 200px;
-    height: 200px;
+    width: 215px;
+    height: 215px;
     vertical-align: middle;
 }
 
@@ -13,10 +13,19 @@
     height: 320px;
 }
 
-/*-------------------links---------------------------*/
+/*-------------------------links---------------------------*/
+
+.links {
+    padding: 5px 15px;
+}
 
 .links:link {
-    background-color: #fc606c;
+    color: #fefffb; 
+    text-decoration: none;
+    border-radius: 35px;
+}
+
+.links:visited {
     color: #fefffb; 
     text-decoration: none;
     border-radius: 35px;
@@ -24,24 +33,38 @@
 
 .links:hover {
     background-color: #fc606c;
+    color: #fefffb; 
+
+}
+
+.links:active {
+    background-color: #fc606c;
     color: #da4188;
 }
 
-.links {
-    padding: 5px 15px;
+aside {
+    width: 315px;
+    height: 450px;
+    text-align: center;
+    margin-right: 25px;
+    margin-left: -115px;
+    float: left;
+    clear: both;
 }
 
-
-
-/*------------------content--------------------------*/
+/*-----------------------content--------------------------*/
 
 .moviesfile
 {
+    background-image: url('../IMAGES/gradient.png');
     background-color: #663b86;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
-    margin: 25px 55px;
+    margin: 15px 175px;
 }
 
 .container {
@@ -51,9 +74,18 @@ header {
 
 thead > tr > td {
     text-align: center;
+    font-weight: bold;
 }
 
-/*--------------------text-----------------------*/
+ul > li {
+    list-style-image: url('../IMAGES/heart.png');
+    font-family: 'Prompt', sans-serif;
+    margin: 0 25px; 
+    padding: 5px 15px;
+    text-align: left;
+}
+
+/*--------------------------text---------------------------*/
 
 #moviepagetitle {
     font-family: 'Press Start 2P', cursive;
@@ -76,43 +108,52 @@ thead > tr > td {
 }
 
 table {
-    border: 5px dashed #da4188;
+    border: 5px dashed #F6D0C8;
 }
 
-td {
+td, p{
+    font-family: 'Prompt', sans-serif;
     padding: 10px 10px;
-    font-size: 1.25em;
+    font-size: 1em;
     color: white;
     text-align: justify;
 
 }
 
-/*--------------------------------------------Studen Info-------------------------------------------------------*/
+/*--------------------------------------------Student Info-------------------------------------------------------*/
 
-/*------------------content--------------------------*/
+/*-----------------------images--------------------------*/
+
+#felixlogo {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*----------------------content--------------------------*/
+.formheader {
+    text-align: center;
+}
 
 .studentinfopage {
-    background-color: #ffe0cc;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fdffce;
+    font-family: 'Comic Neue', cursive;
     color: #ff3333;
 }
 
+/*--------------------form proper-----------------------*/ 
 fieldset {
     width: 925px;
     margin: 0 auto;
-    text-align: center;
     border: 3px solid #ff6600;
+    text-align: center;
 }
 
 legend {
     text-align: center;
     font-size: 1.25em;
-}
-
-input {
-    outline: 0;
-    border-width: 0px 0px 2px;
-    border-color: #ff3333; 
 }
 
 input {
@@ -125,10 +166,18 @@ input {
 
 label {
     font-size: 1.15em;
+    display: inline-block;
+    text-align: right;
 }
 
-#studname, #fathername, #mothername, #guardian, #relative {
-    width: 325px;
+/*--------------------labels-----------------------*/ 
+
+#studname, #guardian, #relative {
+    width: 400px;
+}
+
+#fathername, #mothername {
+    width: 355px;
 }
 
 #age {
@@ -147,19 +196,40 @@ label {
     width: 225px;
 }
 
+#medical, #challenges {
+    width: 825px;
+    height: 75px;
+}
+
+/*--------------------form functions-----------------------*/ 
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-#medical, #challenges {
-    width: 825px;
-    height: 75px;
-}
 
 button[type="submit"] {
     width: 75px;
     height: 35px;
     font-size: 1.15em;
+}
+
+textarea {
+    resize: none;
+}
+
+/*--------------------text-----------------------*/
+
+.class {
+    line-height: 2;
+}
+
+#schooladdress, #schoolyr {
+    font-size: 0.75em;
+}
+
+.school {
+    font-weight: bold;
 }
