@@ -16,7 +16,7 @@
 /*-------------------------links---------------------------*/
 
 .links {
-    padding: 5px 15px;
+    padding: 2px 15px;
 }
 
 .links:link {
@@ -42,16 +42,6 @@
     color: #da4188;
 }
 
-aside {
-    width: 315px;
-    height: 450px;
-    text-align: center;
-    margin-right: 25px;
-    margin-left: -115px;
-    float: left;
-    clear: both;
-}
-
 /*-----------------------content--------------------------*/
 
 .moviesfile
@@ -72,164 +62,92 @@ header {
     padding-right: 100px;
 }
 
+.header {
+    padding-left: 245px;
+    padding-right: 100px;
+    text-align: center;
+}
+
 thead > tr > td {
     text-align: center;
     font-weight: bold;
 }
 
+aside {
+    width: 250px;
+    height: 550px;
+    border: 4px dashed #fc606c;
+    border-radius: 15px;
+    text-align: center;
+    margin-right: 25px;
+    margin-left: -165px;
+    margin-top: 25px;
+    float: left;
+    clear: both;
+}
+
 ul > li {
     list-style-image: url('../IMAGES/heart.png');
     font-family: 'Prompt', sans-serif;
-    margin: 0 25px; 
-    padding: 5px 15px;
-    text-align: left;
+    font-size: 1.15em;
+
 }
+
+.listcontainer1 {
+    margin-left: 400px;
+    margin-right: 850px;
+}
+
+.listcontainer2 {
+    margin-left: 655px;
+    margin-right: 525px;
+    margin-top: -128.5px;
+}
+
+.listcontainer3 {
+    margin-left: 980px;
+    margin-right: 325px;
+    margin-top: -100px;
+    margin-bottom: 40px;
+}
+
+
 
 /*--------------------------text---------------------------*/
 
 #moviepagetitle {
     font-family: 'Press Start 2P', cursive;
     color: #F6D0C8;
+    padding-top: 15px;
     display: inline-block;
     text-shadow: 4px 4px #fc606c;
 }
 
-.moviesh2 {
+.moviesh2, .moviesh3 {
     font-family: 'Press Start 2P', cursive;
     color: #F6D0C8;
     text-shadow: 4px 4px #fc606c;
     display: inline-block;
+    text-align: center;
 
 }
 
 #desc {
     color: white;
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 table {
-    border: 5px dashed #F6D0C8;
+    border: 5px dashed #fc606c;
+    border-radius: 15px;
 }
 
 td, p{
     font-family: 'Prompt', sans-serif;
+    margin: 5px 10px;
     padding: 10px 10px;
     font-size: 1em;
     color: white;
     text-align: justify;
 
-}
-
-/*--------------------------------------------Student Info-------------------------------------------------------*/
-
-/*-----------------------images--------------------------*/
-
-#felixlogo {
-    width: 150px;
-    height: 150px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/*----------------------content--------------------------*/
-.formheader {
-    text-align: center;
-}
-
-.studentinfopage {
-    background-color: #fdffce;
-    font-family: 'Comic Neue', cursive;
-    color: #ff3333;
-}
-
-/*--------------------form proper-----------------------*/ 
-fieldset {
-    width: 925px;
-    margin: 0 auto;
-    border: 3px solid #ff6600;
-    text-align: center;
-}
-
-legend {
-    text-align: center;
-    font-size: 1.25em;
-}
-
-input {
-    outline: 0;
-    border-width: 0px 0px 2px;
-    border-color: #ff3333;
-    margin: 10px 10px;
-    height: 20px; 
-}
-
-label {
-    font-size: 1.15em;
-    display: inline-block;
-    text-align: right;
-}
-
-/*--------------------labels-----------------------*/ 
-
-#studname, #guardian, #relative {
-    width: 400px;
-}
-
-#fathername, #mothername {
-    width: 355px;
-}
-
-#age {
-    width: 30px;
-}
-
-#fatherworkplace, #motherworkplace {
-    width: 250px;
-}
-
-#address {
-    width: 575px;
-}
-
-#email {
-    width: 225px;
-}
-
-#medical, #challenges {
-    width: 825px;
-    height: 75px;
-}
-
-/*--------------------form functions-----------------------*/ 
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-
-button[type="submit"] {
-    width: 75px;
-    height: 35px;
-    font-size: 1.15em;
-}
-
-textarea {
-    resize: none;
-}
-
-/*--------------------text-----------------------*/
-
-.class {
-    line-height: 2;
-}
-
-#schooladdress, #schoolyr {
-    font-size: 0.75em;
-}
-
-.school {
-    font-weight: bold;
 }
